@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Finder</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #111827;
+        background-color: #fff;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    header, section {
+        padding: 50px 0;
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    p {
+        font-size: 14px;
+        color: #6b7280;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .steps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .steps img {
+        width: 300px;
+        border-radius: 10px;
+    }
+    .step-list {
+        max-width: 400px;
+    }
+    .step-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .step-number {
+        background-color: #3b82f6;
+        color: white;
+        font-weight: 600;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+    .featured-jobs {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .job-card {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        width: 220px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .job-type {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 4px 8px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .job-type.fulltime { background: #d1fae5; color: #065f46; }
+    .job-type.parttime { background: #fee2e2; color: #991b1b; }
+    .job-type.remote { background: #e0f2fe; color: #075985; }
+    .news-section {
+        background: #f9fafb;
+        padding: 50px 0;
+    }
+    .news-list {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .news-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .news-content {
+        padding: 15px;
+    }
+    .news-category {
+        font-size: 12px;
+        color: #6b7280;
+        margin-bottom: 5px;
+    }
+    .subscribe {
+        text-align: center;
+        padding: 50px 0;
+    }
+    .subscribe input {
+        padding: 10px;
+        width: 250px;
+        border: 1px solid #d1d5db;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+    .subscribe button {
+        padding: 10px 20px;
+        border: none;
+        background: #3b82f6;
+        color: white;
+        font-weight: 600;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <h2>Find jobs with 3 easy steps</h2>
+        <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+        <div class="steps">
+            <img src="IMG.jpg" alt="Job Search">
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h4>Search for a job</h4>
+                        <p>With lots of unique blocks, you can easily build a page without coding.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h4>Apply with our website</h4>
+                        <p>With lots of unique blocks, you can easily build a page without coding.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h4>Get interview call</h4>
+                        <p>With lots of unique blocks, you can easily build a page without coding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Featured jobs</h2>
+        <p>With lots of unique blocks, you can easily build a page without coding.</p>
+        <div class="featured-jobs">
+            <div class="job-card">
+                <span class="job-type fulltime">Full-time</span>
+                <h4>Senior Software Engineer</h4>
+                <p>New York, USA</p>
+            </div>
+            <div class="job-card">
+                <span class="job-type remote">Remote</span>
+                <h4>Product Designer</h4>
+                <p>Lake Oswego, USA</p>
+            </div>
+            <div class="job-card">
+                <span class="job-type fulltime">Full-time</span>
+                <h4>UX Designer</h4>
+                <p>California, USA</p>
+            </div>
+            <div class="job-card">
+                <span class="job-type parttime">Part-time</span>
+                <h4>Full-stack Web Developer</h4>
+                <p>Argentina, Sweden</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="news-section">
+    <div class="container">
+        <h2>News that helps</h2>
+        <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+        <div class="news-list">
+            <div class="news-card">
+                <img src="Home.png" alt="News 1">
+                <div class="news-content">
+                    <span class="news-category">Career</span>
+                    <h4>How to win any job you want. Get started with 5 steps.</h4>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="Home 2.png" alt="News 2">
+                <div class="news-content">
+                    <span class="news-category">Lifestyle</span>
+                    <h4>10 ways to reduce your office work depression.</h4>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="Home 3.png" alt="News 3">
+                <div class="news-content">
+                    <span class="news-category">Career</span>
+                    <h4>Why should you work as a team even on small projects.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="subscribe">
+    <div class="container">
+        <h2>Get our latest updates</h2>
+        <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+        <div>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
